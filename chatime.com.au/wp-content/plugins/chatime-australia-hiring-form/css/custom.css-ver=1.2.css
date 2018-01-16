@@ -1,0 +1,33 @@
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li{margin-left:0;margin-bottom:0;}.time-col-left{width:49%;float:left;}.time-col-right{width:49%;float:right;}.wickedpicker__controls{padding:0;}@media(max-width: 650px){
+	.time-col-left {
+		width: 100%;
+		float: none;
+	}
+
+	.time-col-right {
+		width: 100%;
+		float: none;
+	}
+}
+
+@media (max-width: 340px){
+	#hiring_form fieldset {
+		min-width: 100%;
+	}
+}
+
+#hiring_form .vfb-item-phone {
+	margin-bottom: 2rem;
+}
+
+#position {
+	margin-bottom: 10px;
+}
+
+.hide {
+	display: none;
+}
+
+.check-label {
+	margin-right: 10px;
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Limited Edition &#8211; Chatime Australia</title>
+	<atom:link href="http://chatime.com.au/menu-category/limited-edition/feed/" rel="self" type="application/rss+xml" />
+	<link>http://chatime.com.au</link>
+	<description></description>
+	<lastBuildDate>Thu, 14 Dec 2017 22:09:48 +0000</lastBuildDate>
+	<language>en-AU</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>Kiwi Kooler Frozen Tea</title>
+		<link>http://chatime.com.au/menu/kiwi-kooler-frozen-tea/</link>
+		<pubDate>Wed, 22 Nov 2017 22:14:58 +0000</pubDate>
+		<dc:creator><![CDATA[tanyataouil]]></dc:creator>
+		
+		<guid isPermaLink="false">http://chatime.com.au/?post_type=drink&#038;p=2570</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="http://chatime.com.au/menu/kiwi-kooler-frozen-tea/">Kiwi Kooler Frozen Tea</a> appeared first on <a rel="nofollow" href="http://chatime.com.au">Chatime Australia</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>The post <a rel="nofollow" href="http://chatime.com.au/menu/kiwi-kooler-frozen-tea/">Kiwi Kooler Frozen Tea</a> appeared first on <a rel="nofollow" href="http://chatime.com.au">Chatime Australia</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Polar Pineapple Frozen Tea</title>
+		<link>http://chatime.com.au/menu/polar-pineapple-frozen-tea/</link>
+		<pubDate>Wed, 22 Nov 2017 22:08:02 +0000</pubDate>
+		<dc:creator><![CDATA[tanyataouil]]></dc:creator>
+		
+		<guid isPermaLink="false">http://chatime.com.au/?post_type=drink&#038;p=2567</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="http://chatime.com.au/menu/polar-pineapple-frozen-tea/">Polar Pineapple Frozen Tea</a> appeared first on <a rel="nofollow" href="http://chatime.com.au">Chatime Australia</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>The post <a rel="nofollow" href="http://chatime.com.au/menu/polar-pineapple-frozen-tea/">Polar Pineapple Frozen Tea</a> appeared first on <a rel="nofollow" href="http://chatime.com.au">Chatime Australia</a>.</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

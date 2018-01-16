@@ -1,0 +1,609 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+ol, ul {list-style: none;}
+.clearfix { clear: both;}
+.clr:after{content:" "; display:block; clear:both}
+
+
+.transparent {
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+/*    */
+/* Preloader */
+#preloader { background: url("../images/loading_background.png"); width:100%; height:100%; position:fixed; text-align:center; z-index:500; display:table; vertical-align:middle;}
+
+#preloader #container {
+	text-align: center;
+    position:relative;
+    vertical-align:middle;
+    display:table-cell;
+    height: 200px;
+}
+
+
+
+/*    */
+/*    */
+/*    */
+
+body {
+	background-color: #fff;
+	font-size: 9pt;
+	line-height: 15pt;
+	letter-spacing: 0.05em;
+	font-family: 'Oswald', Helvetica, sans-serif;
+	color: #000;
+}
+
+html {
+	overflow-y:scroll;
+	overflow-x:auto;
+}
+
+/*.iosfix {
+  height: 101%;
+  overflow: hidden;
+}*/
+
+a:visited {
+	color:#333333; text-decoration: none;
+}
+
+
+a:link {
+	color:#333333;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* FONTS STYLE */
+
+h1, h2, h3, h4 {
+  font-family: 'Oswald', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: 0.05em;
+  word-spacing: -0.041em;
+  line-height: 1.1;
+  color: #7f1184; margin-bottom: 20px; margin-top: 0px;
+}
+
+h1 { font-size: 35px; color: #7f1184;}
+
+h2 { font-size: 20px; color: #000; margin-bottom: 13px;}
+
+h3 { font-size: 16px; color: #000;}
+
+h4 { font-size: 12px;}
+
+
+p { font-size: 9pt;
+	line-height: 15pt;
+	letter-spacing: 0.08em;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color: #333; }
+
+/* Container */
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	position:relative;
+	/*border: 1px #000000 solid; */
+}
+
+.header_container {
+	width: 920px;
+	margin: 0 auto;
+	position:relative;
+	/*border: 1px #000000 solid; */
+}
+
+
+/* Navigation */
+/* HEADER */
+#header { height:100px; font:10px/80px 'Oswald', Helvetica, sans-serif !important; color:#694343; position: fixed; width: 100%; z-index:10; letter-spacing:0.1em;}
+#header .left{list-style-type: none; margin: 28px 0 0 0;}
+#header .left li{margin:0 0 0 45px;float:left; padding-bottom: 5px;}
+#header .left li a{text-decoration:none;}
+#header .center{ background:url("../images/header-logo_chatime.png") center no-repeat; display:block; width:180px; height: 60px; float:left; margin: 0 50px;}
+#header .right{list-style-type: none; }
+#header .right li{margin:0 45px 0 0; float:left;}
+#header .right li a{text-decoration:none;}
+
+#header .home_menu1 {color:#404040;}
+#header .home_menu2 {color:#404040;}
+#header a.active {color:#404040 !important; border-bottom: #7f1085 3px solid; padding-bottom: 2px;}
+#header .center a.active {border: none !important;}
+
+#header #langnav { position: absolute; top: -40px; left: 0px; width: 150px; height: 50px; list-style-type: none; border: 0px solid #000;}
+#header #langnav li { margin:0 0 0 14px; float:left;}
+#header #langnav li a {text-decoration:none; color: #898989; font-size: 10px; text-align: center;}
+
+#header #socialnav { position: absolute; top: -10px; right: -30px; width: 305px; border: 0px solid #000; height: 20px; list-style-type: none;}
+#header #socialnav li, #socialnav li a { margin:0 13px 0 0px; float:left; display: block; width: 18px; height: 18px; border: 0px solid #000; text-indent: -9000px}
+#header #socialnav li a {margin: 0;}
+
+/* #header #socialnav li a {text-decoration:none; color: #898989; font-size: 12px; } */
+
+#socialnav li#topnav-ordernow { margin:0 55px 0 0px; }
+#socialnav li#topnav-ordernow a { background: url("../images/nav-ordernow.png") no-repeat; width: 66px; height: 18px; }
+
+#socialnav li#topnav-checkmypoints { margin:0 61px 0 0px; }
+#socialnav li#topnav-checkmypoints a { background: url("../images/nav-checkpoints.png") no-repeat; width: 66px; height: 18px; }
+#socialnav li#facebook a { background: url("../images/header-btn_facebook.png") no-repeat;}
+#socialnav li#twitter a { background: url("../images/header-btn_twitter.png") no-repeat;}
+#socialnav li#weibo a { background: url("../images/header-btn_weibo.png") no-repeat;}
+#socialnav li#instagram a { background: url("../images/header-btn_instagram.png") no-repeat;}
+#socialnav li#wechat a { background: url("../images/header-btn_wechat.png") no-repeat;}
+#socialnav li#topnav-checkmypoints a:hover, #socialnav li#topnav-ordernow a:hover { -khtml-opacity: 0.70; opacity: 0.70;}
+#socialnav li#facebook a:hover { background: url("../images/header-btn_facebook_rollover.png") no-repeat;}
+#socialnav li#twitter a:hover{ background: url("../images/header-btn_twitter_rollover.png") no-repeat;}
+#socialnav li#weibo a:hover{ background: url("../images/header-btn_weibo_rollover.png") no-repeat;}
+#socialnav li#instagram a:hover{ background: url("../images/header-btn_instagram_rollover.png") no-repeat;}
+#socialnav li#wechat a:hover{ background: url("../images/header-btn_wechat_rollover.png") no-repeat;}
+#socialnav li a.active { border: none;}
+
+
+/* NEWS */
+#news {position:relative; width:100%; height:700px; padding-top: 110px; z-index: 5;}
+#news .background {position:absolute; top:0px; left:0px; width:100%; height:900px; background:url('../images/news_background.png') repeat-x;}
+#news .carousel_home {width:100%; height:900px; overflow:hidden;}
+#news .carousel_home ul {width:100%; height:999999px;}
+#news .carousel_home ul li {width:100%; height:900px; background-repeat:no-repeat; background-position:center center;}
+#news .carousel_home ul li .container {width: 895px;  height: 550px; padding-top: 235px;}
+
+#news .prev { position:absolute; width:27px; height:40px;top: 300px; left: 100px;  cursor:pointer; cursor:hand;}
+#news .prev .normal{position:absolute; top:0px; width:100%; height:100%; background:url('../images/nav_arrow.png') no-repeat bottom left; z-index:20; }
+#news .prev .hover{display:none; position:absolute; top:0px; width:100%; height:100%; background:url('../images/nav_arrow.png') no-repeat bottom right; z-index:20;}
+#news .next {position:absolute; width:27px; height:40px; top: 300px; right: 100px; cursor:pointer; cursor:hand;}
+#news .next .normal{position:absolute; top:0px; width:100%; height:100%; background:url('../images/nav_arrow.png') no-repeat top left; z-index:20;}
+#news .next .hover{display:none; position:absolute; top:0px; width:100%; height:100%; background:url('../images/nav_arrow.png') no-repeat top right; z-index:20;}
+
+#news .pages_box { width: 970px; min-height: 1px; float:left; overflow:hidden;}
+
+#news .page {position: relative; list-style-type: none; width: 960px;  height: 750px; margin: 0px 0px;}
+
+#news .page1 .image1{position:absolute; left: -50px; top: -5px; width: 1000px; height: 450px; background: url("../images/news-TOTM_Jan2018.jpg") no-repeat center center; text-indent: -9000px;}
+
+#news .page2 .text1{ position:absolute; left: 20px; top: 220px; width: 800px; height: 200px; text-align:left;}
+#news .page2 .text1 h1 { font-size: 48pt;text-shadow: 0px 0px 5px #333}
+#news .page2 .text1 h2 { font-size: 18pt; color: #7f1184; line-height: 30pt; font-weight:bolder;}
+#news .page2 .text1 p { font-family: 'Oswald', Helvetica, sans-serif; font-weight:100; font-size: 14pt; line-height: 13pt; }
+
+#news .page2 .image1{position:absolute; left: -50px; top: 5px; width: 1000px; height: 450px; background: url("../images/news-Teair_eng.png") no-repeat center center; z-index: 5; text-indent: -9999px;}
+
+#news .page3 .text1{ position:absolute; left: 15px; top: 105px; width: 450px; height: 400px; text-align:left;
+/* Theoretically for IE 8 & 9 (more valid) */
+  /* ...but not required as filter works too */
+  /* should come BEFORE filter */
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /* IE8 */
+
+  /* This works in IE 8 & 9 too */
+  /* ... but also 5, 6, 7 */
+  filter: alpha(opacity=80); /* IE 5-7 */
+
+  /* Modern Browsers */
+  opacity: 0.8;
+  }
+#news .page3 .text1 h1{ color: #611b46; font-size: 75px; line-height: 80px; font-weight: bolder;}
+
+#news .page3 .image1{position:absolute; left: -50px; top: -5px; width: 1000px; height: 450px;}
+
+
+#news .page4 .image1{position:absolute; left: -50px; top: -30px; width: 1000px; height: 450px; background: url("../images/news-Loyalte-relaunch.png") no-repeat center center; text-indent: -9000px; z-index: 1}
+
+#news .page5 .text1{ position:absolute; left: 100px; top: 240px; width: 700px; height: 400px; }
+#news .page5 .text1 h1{ text-align:center; font-size: 30px; line-height: 48px;}
+#news .page5 .text2{ position:absolute; left: 50px; top: 140px; width: 450px; height: 400px; }
+#news .page5 .text2 h1{ text-align:center; font-size: 55px; line-height: 50px;}
+
+
+#news .page5 .text3 h1{ text-align:center; font-size: 18px; line-height: 22px; margin-top: 5px; font-weight:100;}
+#news .page5 .image1{position:absolute; left: -50px; top: 15px; width: 1000px; height: 450px;}
+
+#news .page6 .text1{ position:absolute; left: -120px; top: 145px; width: 600px; height: 400px; text-align: center;}
+#news .page6 .text1 h1{ font-size: 50px; letter-spacing: normal; font-family: 'Roboto Condensed', sans-serif; }
+#news .page6 .text1 h2{ font-size: 18px; letter-spacing: normal; font-family: 'Roboto Condensed', sans-serif; font-style: italic; color: #7f1184; line-height: 30px;}
+#news .page6 .text1 p { font-family: 'Oswald', Helvetica, sans-serif; font-weight:100; font-size: 9pt; line-height: 13pt; }
+#news .page6 .image1{position:absolute; left: -50px; top: 10px; width: 1000px; height: 450px; background: url("../images/news-willowdale-brewing-background.png") no-repeat center center;}
+
+#news .page7 .image1{position:absolute; left: -50px; top: 10px; width: 1000px; height: 450px;}
+
+#news .page-general .image1{position:absolute; left: -50px; top: 10px; width: 1000px; height: 450px;}
+
+#news .bubbles {position: relative; width: 100%; height: 489px; top: -800px;}
+#news .bubble_1{position:absolute; width: 72px; height: 70px;left: 50px; top: -200px;  background: url('../images/news_bubbles_verylightsmall.png') no-repeat center center; z-index:2; }
+#news .bubble_2{position:absolute; width:130px; height:130px; left: 80px; top: -20px; background:url('../images/news_bubbles_darklarge.png') no-repeat center center; z-index:2;}
+#news .bubble_3{position:absolute; width:100px; height:100px;left: 0px; top: 650px; background:url('../images/news_bubbles_verylightsmall.png') no-repeat center center; z-index:2; }
+#news .bubble_4{position:absolute; width:100px; height:100px; left: 450px; top: 150px; background:url('../images/news_bubbles_lightmid.png') no-repeat center center; z-index:2;}
+#news .bubble_5{position:absolute; width:100px; height:100px; left: 100px; top: 250px; background:url('../images/news_bubbles_lightmid.png') no-repeat center center; z-index:2;}
+#news .bubble_6{position:absolute; width:100px; height:100px; left: 300px; top: 400px; background:url('../images/news_bubbles_darkmid.png') no-repeat center center; z-index:2;}
+#news .bubble_7{position:absolute; width:100px; height:100px; right: 80px; top: 350px; background:url('../images/news_bubbles_lightmid.png') no-repeat center center; z-index:2;}
+#news .bubble_8{position:absolute; width:100px; height:100px; right: 50px; top: -150px; background:url('../images/news_bubbles_verylightsmall.png') no-repeat center center; z-index:2;}
+#news .bubble_9{position:absolute; width:100px; height:100px; left: -180px; top: 550px; background:url('../images/news_bubbles_verylightsmall.png') no-repeat center center; z-index:2; }
+
+#news .navigation { width: 115px; position: absolute; left: 415px; top: -430px; z-index: 30;}
+#news .navigation li{position:relative; width:15px; height:17px; list-style-type: none; float:left; cursor:pointer; cursor:hand; margin:0px 4px;}
+#news .navigation li .normal{position:absolute; top:0px; left:0px; width:100%; height:100%; background: url('../images/news_bullet.png') no-repeat right center;}
+#news .navigation li .hover{display:none; position:absolute; top:0px; left:0px; width:100%; height:100%; background:url('../images/news_bullet.png') no-repeat left center;}
+#news .navigation li.active .hover{display:block !important;}
+#news .navigation li.active .normal{display:none !important;}
+
+
+
+/* GOODTEA */
+#goodtea {position:relative; top: 0px; width:100%; height: 800px; overflow: hidden; background: url('../images/goodtea_background.png') repeat-x; padding-top: 100px; z-index: 5;}
+
+#goodtea .carousel_home {width:100%; height:900px; overflow:hidden;}
+#goodtea .carousel_home ul {width:100%; height:999999px;}
+#goodtea .carousel_home ul li {width:100%; height:900px; background-repeat:no-repeat; background-position:center center;  }
+#goodtea .carousel_home ul li #page1 {position: absolute; top: 0px; left: 0px; width:100%;}
+#goodtea h1 { color:#4c4c4c; font-size: 39px;}
+#goodtea .page {position: relative; list-style-type: none; width: 960px;  height: 750px; margin: 0px 0px; z-index: 3;}
+#goodtea .page1 #text1{ position:absolute; left: 590px; top: 100px; width: 350px; height: 400px;}
+#goodtea .page1 .image1{position:absolute; left: 10px; top: 50px; width: 485px; height: 484px; background: url("../images/goodtea-page1_img1.png") no-repeat center center;}
+#goodtea .page1 .image2{position:absolute; left: 285px; top: -170px; width: 359px; height: 360px; background: url("../images/goodtea-page1_img2.png") no-repeat center center;}
+#goodtea .page2 .text1{ position:absolute; left: 570px; top: 120px; width: 350px; height: 300px; text-align: left;}
+#goodtea .page2 .image1{position:absolute; left: 120px; top: 0px; width: 461px; height: 454px; background: url("../images/goodtea-page2_img1.png") no-repeat center center;}
+#goodtea .page2 .image2{position:absolute; left: px; top: 285px; width: 328px; height: 309px; background: url("../images/goodtea-page2_img2.png") no-repeat center center;}
+
+#goodtea .page3 .text1{ position:absolute; left: 570px; top: 120px; width: 350px; height: 300px; text-align: left;}
+#goodtea .page3 .image1{position:absolute; left: 20px; top: 225px;  width: 400px; height: 400px; background: url("../images/goodtea-page3_img1.png") no-repeat center center;}
+#goodtea .page3 .image2{position:absolute; left: 220px; top: 30px; width: 342px; height: 328px; background: url("../images/goodtea-page3_img2.png") no-repeat center center;}
+
+#goodtea .page4 .text1{ position:absolute; left: 570px; top: 130px; width: 360px; height: 300px; text-align: left;}
+#goodtea .page4 .image1{position:absolute; left: 20px; top: 50px;  width: 556px; height: 379px; background: url("../images/goodtea-page4_img1.png") no-repeat center center;}
+#goodtea .page4 .image2{position:absolute; left: 20px; top: 50px; width: 556px; height: 379px; background: url("../images/goodtea-page4_img2.png") no-repeat center center;}
+
+
+
+#goodtea .prev { position:absolute; width:27px; height:40px;top: 300px; left: 100px;  cursor:pointer; cursor:hand;}
+#goodtea .prev .normal{position:absolute; top:0px; width:100%; height:100%; background:url('../images/nav_arrow.png') no-repeat bottom left; z-index:20;}
+#goodtea .prev .hover{display:none; position:absolute; top:0px; width:100%; height:100%; background:url('../images/nav_arrow.png') no-repeat bottom right; z-index:20;}
+#goodtea .next {position:absolute; width:27px; height:40px; top: 300px; right: 100px; cursor:pointer; cursor:hand;}
+#goodtea .next .normal{position:absolute; top:0px; width:100%; height:100%; background:url('../images/nav_arrow.png') no-repeat top left; z-index:20;}
+#goodtea .next .hover{display:none; position:absolute; top:0px; width:100%; height:100%; background:url('../images/nav_arrow.png') no-repeat top right; z-index:20;}
+
+#goodtea .navigation { width: 100px; position: absolute; left: 420px; top: -430px; z-index: 30;}
+#goodtea .navigation li{position:relative; width:15px; height:17px; list-style-type: none; float:left; cursor:pointer; cursor:hand; margin:0px 4px;}
+#goodtea .navigation li .normal{position:absolute; top:0px; left:0px; width:100%; height:100%; background: url('../images/news_bullet.png') no-repeat right center;}
+#goodtea .navigation li .hover{display:none; position:absolute; top:0px; left:0px; width:100%; height:100%; background:url('../images/news_bullet.png') no-repeat left center;}
+#goodtea .navigation li.active .hover{display:block !important;}
+#goodtea .navigation li.active .normal{display:none !important;}
+
+#goodtea .bubbles {position: relative; width: 100%; height: 489px; top: -850px; z-index: 2;}
+#goodtea .bubble_1{position:absolute; width: 72px; height: 70px;left: 50px; top: -200px;  background: url('../images/news_bubbles_verylightsmall.png') no-repeat center center; z-index:2; }
+#goodtea .bubble_2{position:absolute; width:130px; height:130px; left: 140px; top: -20px; background:url('../images/news_bubbles_darkmid.png') no-repeat center center; z-index:2;}
+#goodtea .bubble_3{position:absolute; width:100px; height:100px;left: 0px; top: 550px; background:url('../images/news_bubbles_verylightsmall.png') no-repeat center center; z-index:2; }
+#goodtea .bubble_4{position:absolute; width:100px; height:100px; left: 450px; top: 550px; background:url('../images/news_bubbles_lightmid.png') no-repeat center center; z-index:2;}
+#goodtea .bubble_5{position:absolute; width:100px; height:100px; left: 100px; top: 250px; background:url('../images/news_bubbles_verylightsmall.png') no-repeat center center; z-index:2;}
+#goodtea .bubble_6{position:absolute; width:100px; height:100px; left: 300px; top: 400px; background:url('../images/news_bubbles_darkmid.png') no-repeat center center; z-index:2;}
+#goodtea .bubble_7{position:absolute; width:100px; height:100px; right: 80px; top: 350px; background:url('../images/news_bubbles_lightmid.png') no-repeat center center; z-index:2;}
+#goodtea .bubble_8{position:absolute; width:100px; height:100px; right: 50px; top: -150px; background:url('../images/news_bubbles_verylightsmall.png') no-repeat center center; z-index:2;}
+#goodtea .bubble_9{position:absolute; width:100px; height:100px; left: -180px; top: 550px; background:url('../images/news_bubbles_verylightsmall.png') no-repeat center center; z-index:2; }
+
+/* put all text on top */
+#text1 {z-index: 25;}
+
+
+/*	GOODTIME  */
+
+#goodtime { position:relative; width:100%; height:900px; overflow: hidden;}
+#goodtime h1 {margin-bottom: 5px;}
+
+#goodtime .carousel_home {width:100%; height:900px; overflow:hidden; z-index: 5;}
+#goodtime .carousel_home ul {width:100%; height:999999px;}
+#goodtime .carousel_home ul li {width:100%; height:900px;}
+#goodtime .carousel_home ul li .container {width: 895px;  height: 500px;}
+#goodtime .carousel_home ul li .container #goodtime_1 {position: absolute; top: 0px; left: 210px; width:100%;}
+#goodtime .carousel_home ul li .container #goodtime_1_image {position: absolute; top: 150px; left: 20px; width: 300px; height: 300px; z-index: 5;}
+
+#drinkselection1, #drinkselection2, #drinkselection3 { position: absolute; top: 410px; left: 510px; width:400px; height: 210px;}
+.drink1, .drink2, .drink3 { cursor: pointer; }
+#goodtime_1_description {position: absolute; top: 220px; left: 525px; width: 360px; color: #9c54b8; font-size: 14px;}
+#drinkselection1 { position: absolute; top: 430px;}
+#goodtime_1_title, #goodtime_2_title, #goodtime_3_title {margin-top: 20px;}
+
+#goodtime_1_description, #goodtime_2_description, #goodtime_3_description {position: absolute; top: 220px; left: 525px; width: 360px; color: #9c54b8; font-size: 14px;}
+#goodtime_1_description img, #goodtime_2_description img, #goodtime_3_description img {margin-left: -10px; display: block; z-index: 5;}
+#goodtime .tips { margin-top: 20px; margin-left: -10px; display: block; width: 147px; height: 72px;}
+#goodtime_1_description { position: absolute; top: 240px;}
+
+#goodtime .carousel_home ul li .container #drinkselection1 ul {height: 100px;}
+#goodtime .carousel_home ul li .container #drinkselection1 ul li {float: left; margin-right: 8px;}
+#goodtime .carousel_home ul li .container #drinkselection1 ul li.drink1 { width: 83px; height: 133px; background: url("../images/goodtime-tea_1_1.png") no-repeat; }
+#goodtime .carousel_home ul li .container #drinkselection1 ul li.drink2 { width: 83px; height: 133px; background: url("../images/goodtime-tea_1_2.png") no-repeat;}
+#goodtime .carousel_home ul li .container #drinkselection1 ul li.drink3 { width: 83px; height: 133px; background: url("../images/goodtime-tea_1_3.png") no-repeat;}
+
+#goodtime .carousel_home ul li .container #goodtime_2 {position: absolute; top: 0px; left: 210px; width:100%;}
+#goodtime .carousel_home ul li .container #goodtime_2_image {position: absolute; top: 150px; left: 20px; width: 300px; height: 300px; z-index: 5;}
+
+#goodtime .carousel_home ul li .container #drinkselection2 ul {height: 100px;}
+#goodtime .carousel_home ul li .container #drinkselection2 ul li {float: left; margin-right: 8px;}
+#goodtime .carousel_home ul li .container #drinkselection2 ul li.drink1 { width: 83px; height: 133px; background: url("../images/goodtime-tea_2_1.png") no-repeat; }
+#goodtime .carousel_home ul li .container #drinkselection2 ul li.drink2 { width: 83px; height: 133px; background: url("../images/goodtime-tea_2_2.png") no-repeat;}
+#goodtime .carousel_home ul li .container #drinkselection2 ul li.drink3 { width: 83px; height: 133px; background: url("../images/goodtime-tea_2_3.png") no-repeat;}
+
+#goodtime .carousel_home ul li .container #goodtime_3 {position: absolute; top: 0px; left: 210px; width:100%;}
+#goodtime .carousel_home ul li .container #goodtime_3_image {position: absolute; top: 150px; left: 20px; width: 300px; height: 300px; z-index: 5;}
+
+#goodtime .carousel_home ul li .container #drinkselection3 ul {height: 100px;}
+#goodtime .carousel_home ul li .container #drinkselection3 ul li {float: left; margin-right: 8px;}
+#goodtime .carousel_home ul li .container #drinkselection3 ul li.drink1 { width: 83px; height: 133px; background: url("../images/goodtime-tea_3_1.png") no-repeat; }
+#goodtime .carousel_home ul li .container #drinkselection3 ul li.drink2 { width: 83px; height: 133px; background: url("../images/goodtime-tea_3_2.png") no-repeat;}
+#goodtime .carousel_home ul li .container #drinkselection3 ul li.drink3 { width: 83px; height: 133px; background: url("../images/goodtime-tea_3_3.png") no-repeat;}
+
+
+
+#goodtime .prev { position:absolute; width:27px; height:40px;top: 340px; left: 100px;  cursor:pointer; cursor:hand; }
+#goodtime .prev .normal{position:absolute; top:0px; width:100%; height:100%; background:url('../images/nav_arrow.png') no-repeat bottom left; z-index:20;}
+#goodtime .prev .hover{display:none; position:absolute; top:0px; width:100%; height:100%; background:url('../images/nav_arrow.png') no-repeat bottom right; z-index:20;}
+#goodtime .next {position:absolute; width:27px; height:40px; top: 340px; right: 100px; cursor:pointer; cursor:hand;}
+#goodtime .next .normal{position:absolute; top:0px; width:100%; height:100%; background:url('../images/nav_arrow.png') no-repeat top left; z-index:20;}
+#goodtime .next .hover{display:none; position:absolute; top:0px; width:100%; height:100%; background:url('../images/nav_arrow.png') no-repeat top right; z-index:20;}
+
+#goodtime .navigation { width: 100px; position: absolute; left: 460px; top: -290px; z-index: 30;}
+#goodtime .navigation li{position:relative; width:15px; height:17px; list-style-type: none; float:left; cursor:pointer; cursor:hand; margin:0px 4px;}
+#goodtime .navigation li .normal{position:absolute; top:0px; left:0px; width:100%; height:100%; background: url('../images/news_bullet.png') no-repeat right center;}
+#goodtime .navigation li .hover{display:none; position:absolute; top:0px; left:0px; width:100%; height:100%; background:url('../images/news_bullet.png') no-repeat left center;}
+#goodtime .navigation li.active .hover{display:block !important;}
+#goodtime  navigation li.active .normal{display:none !important;}
+
+#goodtime.bubbles {position: relative; width: 100%; height: 489px; top: -850px; z-index: 0;}
+#goodtime .bubble_1{position:absolute; width: 72px; height: 70px;left: 50px; top: -200px;  background: url('../images/news_bubbles_verylightsmall.png') no-repeat center center; }
+#goodtime .bubble_2{position:absolute; width:130px; height:130px; left: 20px; top: 500px; background:url('../images/news_bubbles_darkmid.png') no-repeat center center;}
+#goodtime .bubble_3{position:absolute; width:100px; height:100px;left: 600px; top: 120px; background:url('../images/news_bubbles_verylightsmall.png') no-repeat center center; }
+#goodtime .bubble_4{position:absolute; width:100px; height:100px; left: 450px; top: 550px; background:url('../images/news_bubbles_lightmid.png') no-repeat center center; }
+#goodtime .bubble_5{position:absolute; width:100px; height:100px; left: 100px; top: 250px; background:url('../images/news_bubbles_verylightsmall.png') no-repeat center center; }
+#goodtime .bubble_6{position:absolute; width:100px; height:100px; left: 300px; top: 400px; background:url('../images/news_bubbles_darkmid.png') no-repeat center center; }
+#goodtime .bubble_7{position:absolute; width:100px; height:100px; right: 20px; top: 450px; background:url('../images/news_bubbles_verylightsmall.png') no-repeat center center; }
+#goodtime .bubble_8{position:absolute; width:100px; height:100px; right: 50px; top: -150px; background:url('../images/news_bubbles_verylightsmall.png') no-repeat center center; }
+#goodtime .bubble_9{position:absolute; width:100px; height:100px; left: -180px; top: 550px; background:url('../images/news_bubbles_verylightsmall.png') no-repeat center center;}
+
+/*	OUR DRINKS  */
+#menu { position:relative; width:100%; height: 1500px; overflow: hidden; background:url("../images/menu-background.png") bottom repeat-x; letter-spacing: 0.10em; z-index: 5;}
+#menu .extra { float: left; font-size: 11px; line-height: 13px; padding: 10px 22px 10px 0px; margin-top: 15px; margin-right: 15px; border-right: 1px #ccc solid; font-family: Helvetica, Arial, sans-serif; }
+#menu .extra:nth-child(4) { border: none; margin-right: 0px;}
+#menu .extra h3 { font-size: 10px; color: #000; line-height: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; }
+#menu .coldonly { font-size: 10px; background:url("../images/menu_colddrinks.png") no-repeat; text-indent: 25px; margin: 10px 0px 25px; font-family: Helvetica, Arial, sans-serif; font-weight: bold;}
+#menu .new { font-size: 10px; background:url("../images/menu_newdrinks.png") no-repeat; text-indent: 32px; margin: 10px 0px 25px; font-family: Helvetica, Arial, sans-serif; font-weight: bold;}
+
+#menu .drinks_title { color: #7f1184;}
+#menu .drinks_subtitle { font-size: 10px; color: #a5a5a5; font-style: italic; font-family: Helvetica, Arial, sans-serif}
+#menu table td { vertical-align: middle;}
+#menu table td.name { width: 250px; margin-left: 80px;}
+#menu table td.cold { width: 25px;}
+#menu .cups { position: absolute; width:100%; height: 900px; margin: 0px auto; background: url('../images/menu-cupsbkgd_blurred.png')}
+#menu .cups_big1 { position: absolute;  left: 100px; top: 300px; width: 105px; height: 171px; margin: 0px auto 0 auto; background: url("../images/menu-cupsbkgd_focused_1.png") no-repeat;}
+#menu .cups_big2 { position: absolute;  right: 100px; top: 500px; width:78px; height: 130px; margin: 0px auto 0 auto; background: url("../images/menu-cupsbkgd_focused_2.png") no-repeat;}
+
+#menu .tempback {width: 100%; height: 140px; position:fixed; top: 0; left: 0; background:url('../images/menu_toptransbkgd.png') repeat-x; z-index: 50}
+
+/* REWARDS */
+
+#st-accordion2 { margin-top: 20px;}
+#rewards {position:relative; width:100%; height: 1000px; overflow: hidden; background:url('../images/locations-background.png') repeat-x;}
+
+#rewards .checkmypoints a {width:189px; height: 31px; background: url("../images/btn-checkpoints.png") no-repeat; text-indent: -9000px; display:block; margin: 15px 0px 0px;}
+
+#rewards .checkmypoints a:hover { -khtml-opacity: 0.70; opacity: 0.70;}
+
+
+#rewards .rewards-details { float: left; width: 465px;}
+
+#rewards .rewards-details p { font-size: 9pt;
+	line-height: 13pt;
+	letter-spacing: 0.08em;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color: #333; font-style: normal;}
+
+#rewards .rewards-details span.rewards_q { color: #7F1184; font-weight: bold;}
+#rewards .rewards-bullet { color: #333; font-size: 16px; letter-spacing: 0em;}
+#rewards .rewards_text { line-height: 20px; padding-bottom:30px; margin-top: -12px ;}
+#rewards .rewards_text ul {
+	margin:0px;
+    padding-left:15px;
+}
+
+#rewards .rewards_text ul li {
+ 	height: auto;
+    border-bottom: 0px solid #e6bce0;
+    border-top:0px solid #fff;
+	list-style-type: disc;
+    text-indent: 0em;
+    margin-left: 1em;
+	overflow: visible;
+	line-height: 13pt;
+	letter-spacing: 0.08em;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color: #333; font-style: normal;
+}
+
+#rewards .tempback {width: 100%; height: 140px; position:fixed; top: 0; left: 0; background:url('../images/rewards_toptransbkgd.png') repeat-x; z-index: 8; display: none;}
+
+
+/* LOCATION */
+
+#locations {position:relative; width:100%; height: 700px; overflow: hidden; background:url('../images/news_background.png') repeat-x; padding-top: 80px;}
+#locations .background {position:absolute; top:0px; left:0px; width:100%; height:900px; }
+
+
+#locations .prev { position:absolute; width:30px; top: 0px; left: 180px; height:18px; cursor:pointer; cursor:hand;}
+#locations .prev .normal{position:absolute; top:0px; width:100%; height:100%; background:url('../images/nav_arrow_updown.png') no-repeat top left; z-index:20;}
+#locations .prev .hover{display:none; position:absolute; top:0px; width:100%; height:100%; background:url('../images/nav_arrow_updown.png') no-repeat top right; z-index:20;}
+#locations .next {position:absolute; width:30px; height:18px; top: 440px; left: 180px; cursor:pointer; cursor:hand;}
+#locations .next .normal{position:absolute; top:0px; width:100%; height:100%; background:url('../images/nav_arrow_updown.png') no-repeat bottom left; z-index:20;}
+#locations .next .hover{display:none; position:absolute; top:0px; width:100%; height:100%; background:url('../images/nav_arrow_updown.png') no-repeat bottom right; z-index:20;}
+
+#locations .pages_box { width: 410px; height: 460px; overflow:hidden;}
+#locations .pages { width:999999px;}
+
+#locations .page {position: relative; list-style-type: none; width: 410px;  height: 400px; margin: 30px 0px; background: #CCC;}
+
+
+
+
+#locations #city {width: 420px; margin: 15px 0 0 0;}
+#locations #city ul li {margin-right: 5px; list-style-type: none; float:left; cursor:pointer; cursor:hand; color: #808080;  font-family: Helvetica, Arial, sans-serif; font-weight: bold;}
+
+#locations #city ul li.region { color: #333; clear:left}
+
+
+#locations #city ul li.btn:hover{ color: #7f1184;}
+
+#locations #city ul li.active{color: #7f1184 !important; font-family: Helvetica, Arial, sans-serif;}
+
+#locations #map {width: 280px; height: 400px; margin-top: 25px; overflow:hidden; border-left: 1px #CCCCCC solid;}
+#locations #map ul { width: 280px; height: auto;}
+#locations #map h3 { color: #7f1184; margin-bottom: 10px;}
+#locations #map li {list-style-type: none; display:block; width: 260px; height: 180px; max-height: 200px; margin-bottom: 20px; border-bottom: #CCC 1px solid; padding-bottom: 20px;  padding-left: 25px;}
+#locations #map li div.info { margin-right: 0px; width: 260px;}
+
+#chatimemap { height:480px;display:inline-block;overflow:hidden; float:left; margin-top: 63px; margin-left: 10px; }
+
+.map-pin {float:left; margin-right: 5px; margin-top: -2px; margin-left: -2px; width: 16px; height: 25px;}
+
+.table .column{
+   width: 200px;
+   float: left;
+   font-family: Helvetica, Arial, sans-serif;
+   padding-right: 10px; padding-bottom: 5px;
+}
+
+.table .column.first{
+   clear: left;
+   width: 20px;
+}
+
+.hours { color: #6a6a6a;}
+
+
+
+
+/* GOOGLE MAP */
+/*#map_canvas_downtown, #map_canvas_northyork, #map_canvas_willowdale, #map_canvas_markham, #map_canvas_richmondhill, #map_canvas_pacmall, #map_canvas_waterloo, #map_canvas_mississauga, #map_canvas_annex_downtown, #map_canvas_scarborough_midland, #map_canvas_vaughan_rutherford {
+    width: 176px;
+    height: 155px;
+	border: #FFF 3px solid;
+  }
+
+/* CONTACTUS */
+
+
+#contact{position:relative; width:100%; height:700px; overflow: hidden; background: url("../images/contactus_background.png") repeat-x;}
+
+#contact h1 {margin-bottom: 10px;}
+
+.block {
+	width:400px;
+	text-align:left;
+	margin-top: 20px;
+	margin-left: 150px;
+}
+.element * {
+	padding: 5px;
+	margin-bottom: 10px;
+	font-family:arial;
+	font-size:12px !important;
+}
+
+.element input.text {
+	float:left;
+	width: 390px;
+	padding-top: 10px;
+	padding-left:5px;
+	font-size:12px;
+}
+.element .textarea {
+	height:120px;
+	width: 390px;
+	padding-left:5px;
+}
+
+#submit {
+	width: 100%;
+	padding-left:5px;
+}
+
+.loading {
+	float:right;
+	background:url("ajax-loader.gif.html") no-repeat 1px;
+	height:28px;
+	width:28px;
+	display:none;
+}
+.done {
+	font-family: Helvetica, Arial,  sans-serif;
+	font-size:12px;
+	width: 400px;
+	margin:20px auto;
+	display:none
+}
+
+select {width:400px !important;}
+
+.tw-bs label { display: none;}
+
+
+
+#footer {width: 100%; height: 20px; text-align: center; margin-top: 150px;}
+
+.robotic { display: none; }
+
+
+.ubereat img {
+	margin: 5px 0px;
+}
+
+
+
+/* MEDIA SCREEN */
+
+@media only screen and (max-width: 1050px) {
+.header_container { width: 900px}
+#header .left li{margin:0 0 0 40px;float:left; padding-bottom: 5px;}
+#header .center{ background:url("../images/header-logo_chatime.png") center no-repeat; display:block; width:180px; height: 60px; float:left; margin: 0 50px;}
+#header .right li{margin:0 40px 0 0; float:left;}
+
+#news .prev, #goodtea .prev, #goodtime .prev {left: 20px;}
+#news .next, #goodtea .next, #goodtime  .next {right: 20px;}
+
+#menu .cups_big1 { position: absolute;  left: 20px;}
+#menu .cups_big2 { position: absolute;  right: 20px;}
+}
+
+/*
+@media only screen and (max-width: 900px) {
+
+#header .left li{margin:0 0 0 20px;float:left; padding-bottom: 5px;}
+#header .center{ background:url("../images/header-logo_chatime.png") center no-repeat; display:block; width:180px; height: 60px; float:left; margin: 0 35px;}
+#header .right li{margin:0 20px 0 0; float:left;} -->
+
+#news .prev, #goodtea .prev, #goodtime .prev {left: 10px;}
+#news .next, #goodtea .next, #goodtime  .next {right: 10px;}
+
+} */
